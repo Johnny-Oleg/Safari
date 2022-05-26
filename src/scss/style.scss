@@ -100,7 +100,7 @@
 	&__text {
 		padding: 10px 19px 14px;
 		font-size: 16px;
-		border: 1px solid #D9D9DE;
+		border: 1px solid $white;
 		border-top: none;
 	}
 }
@@ -114,7 +114,7 @@
 
 	&__title {
 		margin-bottom: 50px;
-		color: #fff;
+		color: $white-main;
 	}
 	
 	&__items {
@@ -130,7 +130,7 @@
 	&__text {
 		font-size: 16px;
 		line-height: 130%;
-		color: #fff;
+		color: $white-main;
 	}
 }
 
@@ -147,7 +147,7 @@
 		grid-template-rows: repeat(4, 1fr);
 		grid-gap: 32px;
 		padding-bottom: 80px;
-		border-bottom: 1px solid #D9D9DE;
+		border-bottom: 1px solid $white;
 	}
 	
 	&__link {
@@ -190,6 +190,85 @@
 	}
 }
 
+.map {
+    padding-bottom: 100px;
+
+	&__title {
+		margin-bottom: 46px;
+	}
+}
+
+.about {
+    padding-bottom: 100px;
+
+	&__inner {
+		display: grid;
+		grid-template-columns: 448px 640px;
+		grid-gap: 32px;
+	}
+	
+	&__title {
+		margin-bottom: 25px;
+		text-align: left;
+	}
+	
+	&__text {
+		margin-bottom: 34px;
+	}
+	
+	&__link {
+		font-size: 16px;
+		line-height: 19px;
+		color: $gray;
+		text-decoration: underline;
+	}
+	
+	&__popup {
+		@include flex(center);
+		background-image: url(../images/video-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+	}
+}
+
+.gallery {
+    padding: 50px 0 105px;
+    background: $brown;
+    color: $white-main;
+
+	&__top {
+		@include flex(space-between);
+		margin-bottom: 40px;
+		padding-right: 160px;
+	}
+	
+	&__link {
+		font-size: 16px;
+		line-height: 19px;
+		text-decoration: underline;
+	}
+	
+	&__item-inner {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 32px;
+	}
+}
+
+
+.slick-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: -85px;
+    right: 0;
+}
+
+.slick-prev {
+    right: 60px;
+}
 
 
 
